@@ -55,7 +55,9 @@
 ## 4. hand_landmarker.task (float16, 버전 1)
 
 - 용도: 손 특징점 21점 온디바이스 추론
-- 배포 형태: 앱 번들 리소스
+- 배포 형태: 수집·기술 검증용 GoruLab 앱 번들 리소스. 공모전 제출 앱인
+  GoruShowcase에는 이 파일을 번들하지 않는다. GoruShowcase는 3번
+  `gesture_recognizer.task`로 손 특징점과 제스처를 함께 추론한다.
 - 저작권 귀속: Google LLC, MediaPipe
 - 라이선스: Apache License 2.0
 - 근거: [Model Card Hand Tracking (Lite/Full) with Fairness](https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Hand%20Tracking%20(Lite_Full)%20with%20Fairness%20Oct%202021.pdf)
@@ -64,8 +66,9 @@
 ## 5. canonical_face_model.obj (표준 얼굴 3D 모델·UV 좌표)
 
 - 용도: 얼굴 표면 UV 맵 좌표계 구성의 원천 topology와 UV 좌표
-- 배포 형태: 저장소 포함 자산 (google-ai-edge/mediapipe 저장소 파일과
-  바이트 동일 확인)
+- 배포 형태: 비공개 개발 저장소에 포함한 원본 자산이며(google-ai-edge/mediapipe
+  저장소 파일과 바이트 동일 확인), 공모전 제출 앱 GoruShowcase에는 이 원본
+  파일을 번들하지 않는다. GoruShowcase에는 6번의 파생 파일만 번들한다.
 - 저작권 귀속: Google LLC, MediaPipe
 - 라이선스: Apache License 2.0
 - 근거: [google-ai-edge/mediapipe 저장소 LICENSE](https://github.com/google-ai-edge/mediapipe/blob/master/LICENSE)
